@@ -1,12 +1,12 @@
 
 {
-  "name": "your-project-name",
+  "name": "1x1-scheduler",
   "version": "1.0.0",
   "main": "App.js",
   "scripts": {
-    "start": "concurrently \"npm run start-backend\" \"npm run start-frontend\"",
-    "start-backend": "cd careerCarveScheduler && npm start",
-    "start-frontend": "cd careercarvefrontend && npm start"
+    "start": "concurrently \"npm run start-frontend\" \"npm run start-backend\"",
+    "start-frontend": "cd careercarvefrontend && npm start",
+    "start-backend": "cd careerCarveScheduler && npm start"
   },
   "devDependencies": {
     "concurrently": "^8.2.2"
