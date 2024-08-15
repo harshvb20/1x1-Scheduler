@@ -14,10 +14,10 @@ app.use(express.json());
 
 // Create MySQL connection
 const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '1762', // Use environment variable for security
-    database: 'careerCarve',
+    host: 'befowxwfvvag7ljh5wdj-mysql.services.clever-cloud.com',
+    user: 'uznjp1oiz1ufcmzq',
+    password: '2RQSf2SzQscj5WVpRxEA', // Use environment variable for security
+    database: 'befowxwfvvag7ljh5wdj',
     port: 3306
 });
 
