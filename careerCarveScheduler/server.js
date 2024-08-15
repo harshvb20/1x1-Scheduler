@@ -66,11 +66,11 @@ app.post('/schedule', (req, res) => {
 });
 
 // Serve static files from the frontend build directory
-app.use(express.static(path.join(__dirname, 'careercarvefrontend/build')));
+app.use(express.static(path.join(__dirname, 'careercarvefrontend/')));
 
 // Route all other requests to the frontend
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'careercarvefrontend/build', 'App.js'));
+    res.sendFile(path.join(__dirname, 'careercarvefrontend/', 'App.js'));
 });
 
 // Root endpoint
