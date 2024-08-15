@@ -2,7 +2,6 @@ const express = require('express');
 const mysql = require('mysql2');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const path = require('path');
 const { validationResult, check } = require('express-validator');
 
 // Create Express app
@@ -63,14 +62,6 @@ app.post('/schedule', (req, res) => {
             res.send('Schedule created successfully');
         });
     });
-});
-
-// Serve static files from the frontend build directory
-app.use(express.static(path.join('cd ..', '/careercarvefrontend/src')));
-
-// Route all other requests to the frontend
-app.get('*', (req, res) => {
-    res.sendFile(path.join('cd ..', 'careercarvefrontend/src', 'App.js'));
 });
 
 // Root endpoint
