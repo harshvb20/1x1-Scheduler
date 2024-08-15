@@ -1,0 +1,14 @@
+
+{
+  "name": "your-project-name",
+  "version": "1.0.0",
+  "main": "App.js",
+  "scripts": {
+    "start": "concurrently \"npm run start-backend\" \"npm run start-frontend\"",
+    "start-backend": "cd careerCarveScheduler && npm start",
+    "start-frontend": "cd careercarvefrontend && npm start"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
