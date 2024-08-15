@@ -1,5 +1,7 @@
 The 1x1 Scheduler is a web application designed for scheduling 1-on-1 meetings between students and mentors. It allows students to book time slots with their preferred mentors or based on their areas of interest.
 
+Website: https://1x1-scheduler.vercel.app/
+
 ## Features
 
 - **Student Registration**: Register students and specify their area of interest.
